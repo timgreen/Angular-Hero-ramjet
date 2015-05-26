@@ -3,8 +3,8 @@
     uglify = require('gulp-uglify');
 
 gulp.task('default', function () {
-    return gulp.src('angular-hero.js')
+    return gulp.src('angular-hero-ramjet.js')
         .pipe(uglify())
-        .pipe(concat('angular-hero-min.js'))
+        .pipe(concat('angular-hero-ramjet.min.js'))
         .pipe(gulp.dest('./'));
 });
