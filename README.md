@@ -29,15 +29,13 @@ bower install https://github.com/timgreen/Angular-Hero-ramjet.git#ramjet
     angular.module('app', ['alAngularHeroRamjet'])
     ```
 
-2. Include the supplied CSS file or add the `.hero-animating` style to your own.
-
-3. Declare the page transitions to use on the `ng-view` or `ng-viewport` element, including `hero-transition`:
+2. Declare the page transitions to use on the `ng-view` or `ng-viewport` element, including `hero-ramjet-transition`:
     ```html
-    <div ng-view class="page-transition hero-transition"></div>
+    <div ng-view class="page-transition hero-ramjet-transition"></div>
     ```
-4. Identify hero elements with the `hero` class and `hero-id` attribute:
+3. Identify hero elements with the `hero-ramjet` class and `hero-id` attribute:
     ```html
-    <div class="name hero" hero-id="name">{{contact.name}}</div>
+    <div class="name hero-ramjet" hero-id="name">{{contact.name}}</div>
     ```
 
     The `hero-id` attribute should be the same on both pages to trigger a hero animation from one to the other.

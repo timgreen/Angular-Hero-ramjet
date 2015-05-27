@@ -2,7 +2,7 @@
 'use strict';
 
 angular.module('alAngularHeroRamjet', ['ngAnimate'])
-    .animation('.hero-transition', [function () {
+    .animation('.hero-ramjet-transition', [function () {
 
         var _fromScreen, _toScreen, _doneList, _startTimer, _movingList;
 
@@ -48,8 +48,8 @@ angular.module('alAngularHeroRamjet', ['ngAnimate'])
         // Start the hero transitions
         var start = function start() {
             // Get hero elements from both screens
-            var fromHeros = _fromScreen[0].getElementsByClassName("hero");
-            var toHeros = _toScreen[0].getElementsByClassName("hero");
+            var fromHeros = _fromScreen[0].getElementsByClassName("hero-ramjet");
+            var toHeros = _toScreen[0].getElementsByClassName("hero-ramjet");
 
             // Find all the matching pairs
             var pairs = [];
