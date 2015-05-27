@@ -3,7 +3,7 @@
   "main": [
     "./angular-hero-ramjet.js"
   ],
-  "version": "0.0.1",
+  "version": "0.1.0",
   "authors": [
     "Tim Green <iamtimgreen@gmail.com>"
   ],
