@@ -1,17 +1,17 @@
 {
-  "name": "Angular-Hero",
-  "version": "0.0.3",
-  "main": "angular-hero.js",
+  "name": "Angular-Hero-ramjet",
+  "version": "0.0.1",
+  "main": "angular-hero-ramjet.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DevAndyLee/Angular-Hero.git"
+    "url": "https://github.com/timgreen/Angular-Hero-ramjet"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DevAndyLee/Angular-Hero/issues"
+    "url": "https://github.com/timgreen/Angular-Hero-ramjet/issues"
   },
-  "homepage": "https://github.com/DevAndyLee/Angular-Hero",
+  "homepage": "https://github.com/timgreen/Angular-Hero-ramjet",
   "dependencies": {
     "gulp": "^3.8.10",
     "gulp-concat": "^2.4.2",
