@@ -47,15 +47,23 @@ angular.module('alAngularHeroRamjet', ['ngAnimate'])
 
         // Start the hero transitions
         var start = function start() {
+            _fromScreen.addClass('hero-ramjet-leave');
+            _toScreen.addClass('hero-ramjet-enter');
+
             // Get hero elements from both screens
             var fromHeros = _fromScreen[0].getElementsByClassName("hero-ramjet");
             var toHeros = _toScreen[0].getElementsByClassName("hero-ramjet");
+
+            for (var m = 0; m < toHeros.length; m++) {
+                angular.element(toHeros[m]).addClass('hero-ramjet-inactive');
+            }
 
             // Find all the matching pairs
             var pairs = [];
             for (var n = 0; n < fromHeros.length; n++) {
                 for (var m = 0; m < toHeros.length; m++) {
                     if (fromHeros[n].getAttribute('hero-id') === toHeros[m].getAttribute('hero-id')) {
+                        angular.element(toHeros[m]).removeClass('hero-ramjet-inactive');
                         pairs.push({ from: fromHeros[n], to: toHeros[m] });
                     }
                 }
@@ -109,6 +117,15 @@ angular.module('alAngularHeroRamjet', ['ngAnimate'])
 
         // Clear everything down and initialise for next time
         var clear = function clear() {
+            if (_fromScreen) {
+                _fromScreen.removeClass('hero-ramjet-leave');
+            }
+            if (_toScreen) {
+                _toScreen.removeClass('hero-ramjet-enter');
+            }
+
+            // TODO(timgreen): remove class 'hero-ramjet-inactive'
+
             _fromScreen = null;
             _toScreen = null;
             _doneList = [];
