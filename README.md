@@ -18,7 +18,7 @@ Example project here: [Angular-Hero-Sample](https://github.com/DevAndyLee/Angula
 TODO(timgreen):
 
 ```
-bower install https://github.com/timgreen/Angular-Hero-ramjet.git#ramjet
+bower install angular-hero-ramjet
 ```
 
 ##Usage
